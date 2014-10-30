@@ -1,0 +1,24 @@
+{
+  "name": "just-example",
+  "version": "0.0.1",
+  "description": "an example webpage built with just-html and just-css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/couchand/just-example.git"
+  },
+  "keywords": [
+    "just-html",
+    "just-css",
+    "example"
+  ],
+  "author": "Andrew Couch <just-example@andrewcou.ch>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/couchand/just-example/issues"
+  },
+  "homepage": "https://github.com/couchand/just-example"
+}

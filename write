@@ -1,0 +1,25 @@
+#!/usr/local/bin/coffee
+
+fs = require 'fs'
+write = require './src'
+
+argv = process.argv
+argc = argv.length
+
+usage = ->
+  console.error "Usage: #{argv[0]} #{argv[1]}"
+  console.error "  Output files must not exist."
+  process.exit 1
+
+usage() unless argc is 2
+
+usage() if fs.existsSync "index.html"
+usage() if fs.existsSync "style.css"
+
+write (err) ->
+
+  if err
+    console.error "Error: #{err}"
+
+  else
+    console.log "2 files written."
